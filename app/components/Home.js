@@ -4,7 +4,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        React Webpack Express Boilerplate Project
+        React Webpack Express Electron Boilerplate Project
       </div>
     )
   };

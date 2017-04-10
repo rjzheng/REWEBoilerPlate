@@ -1,12 +1,12 @@
 {
-  "name": "react-express-boilerplate",
+  "name": "react-express-electron-boilerplate",
   "version": "1.0.0",
-  "description": "React Express Webpack Boilerplate Project",
-  "repository": "https://github.com/rjzheng/REWBoilerplate.git",
-  "main": "index.js",
+  "description": "React Express Webpack Electron Boilerplate Project",
+  "repository": "https://github.com/rjzheng/REWEBoilerplate.git",
+  "main": "main.js",
   "scripts": {
     "test": "karma start",
-    "start": "node server.js"
+    "start": "concurrently \"webpack -w\" \"node server.js\" \"electron .\""
   },
   "author": "Richard Zheng",
   "license": "MIT",
@@ -40,6 +40,10 @@
     "mocha": "^2.4.5",
     "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.13"
+    "webpack": "^1.12.13",
+    "devtron": "^1.4.0",
+    "electron": "~1.6.2",
+    "electron-reload": "^1.1.0",
+    "electron-window-state": "^4.1.0"
   }
 }
